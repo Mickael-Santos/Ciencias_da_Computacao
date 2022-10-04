@@ -30,7 +30,7 @@ function retorna()
     item = document.getElementById('num');
     item.innerHTML = str;
 
-}
+};
 //Função para calcular a expressão aritmética
 function calcular()
 {
@@ -38,11 +38,18 @@ function calcular()
     if(numero)
     {
         document.getElementById('num').innerHTML = eval(numero);
-    }
-}
+    };
+};
 
 //Função para animar os botões ao passar o mouse
 
-
+function animar(id)
+{
+    document.getElementById(id).style.background = "rgb(25,25,26)";
+}
+function remove(id)
+{
+    document.getElementById(id).style.background = "black";
+}
 
   

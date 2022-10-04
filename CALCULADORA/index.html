@@ -25,32 +25,32 @@
             <div id="botoes">
                 <table id="bts">
                     <tr>
-                        <td id="clear" onclick="insertC()">C</td>
-                        <td id="voltar" onclick="retorna()">&#9665;</td>
-                        <td id="divisão" onclick="insert('/')">/</td>
-                        <td id="multiplicação" onclick="insert('*')">*</td>
+                        <td id="clear" onclick="insertC()" onmouseenter="animar('clear')" onmouseleave="remove('clear')">C</td>
+                        <td id="voltar" onclick="retorna()" onmouseenter="animar('voltar')" onmouseleave="remove('voltar')">&#9665;</td>
+                        <td id="divisão" onclick="insert('/')" onmouseenter="animar('divisão')" onmouseleave="remove('divisão')">/</td>
+                        <td id="multiplicação" onclick="insert('*')" onmouseenter="animar('multiplicação')" onmouseleave="remove('multiplicação')">*</td>
                     </tr>
                     <tr>
-                        <td id="7" onclick="insert('7')">7</td>
-                        <td id="8" onclick="insert('8')">8</td>
-                        <td id="9" onclick="insert('9')">9</td>
-                        <td id="-" onclick="insert('-')">-</td>
+                        <td id="7" onclick="insert('7')" onmouseenter="animar('7')" onmouseleave="remove('7')">7</td>
+                        <td id="8" onclick="insert('8')" onmouseenter="animar('8')" onmouseleave="remove('8')">8</td>
+                        <td id="9" onclick="insert('9')" onmouseenter="animar('9')" onmouseleave="remove('9')">9</td>
+                        <td id="-" onclick="insert('-')" onmouseenter="animar('-')" onmouseleave="remove('-')">-</td>
                     </tr>
                     <tr>
-                        <td  id="4" onclick="insert('4')">4</td>
-                        <td  id="5" onclick="insert('5')">5</td>
-                        <td  id="6" onclick="insert('6')">6</td>
-                        <td  id="+" onclick="insert('+')">+</td>
+                        <td  id="4" onclick="insert('4')" onmouseenter="animar('4')" onmouseleave="remove('4')">4</td>
+                        <td  id="5" onclick="insert('5')" onmouseenter="animar('5')" onmouseleave="remove('5')">5</td>
+                        <td  id="6" onclick="insert('6')" onmouseenter="animar('6')" onmouseleave="remove('6')">6</td>
+                        <td  id="+" onclick="insert('+')" onmouseenter="animar('+')" onmouseleave="remove('+')">+</td>
                     </tr>
                     <tr>
-                        <td  id="1" onclick="insert('1')">1</td>
-                        <td  id="2" onclick="insert('2')">2</td>
-                        <td  id="3" onclick="insert('3')">3</td>
+                        <td  id="1" onclick="insert('1')" onmouseenter="animar('1')" onmouseleave="remove('1')">1</td>
+                        <td  id="2" onclick="insert('2')" onmouseenter="animar('2')" onmouseleave="remove('2')">2</td>
+                        <td  id="3" onclick="insert('3')" onmouseenter="animar('3')" onmouseleave="remove('3')">3</td>
                     </tr>
                     <tr>
-                        <td  id="0" onclick="insert('0')">0</td>
-                        <td  id="." onclick="insert('.')">.</td>
-                        <td id="igual" onclick="calcular()">=</td>
+                        <td  id="0" onclick="insert('0')" onmouseenter="animar('0')" onmouseleave="remove('0')">0</td>
+                        <td  id="." onclick="insert('.')" onmouseenter="animar('.')" onmouseleave="remove('.')">.</td>
+                        <td id="igual" onclick="calcular()" onmouseenter="animar('igual')" onmouseleave="remove('igual')">=</td>
                     </tr>
 
                 </table>
