@@ -11,6 +11,7 @@ body
 {
     background-color: rgb(28, 28, 28);
     padding: 0px;
+    margin: 0px;
 }
 
 .btn
@@ -71,4 +72,68 @@ h1
     box-shadow: 1px 1px 4px;
     
 
+}
+
+.cxquestion
+{
+    background-color: rgb(5, 10, 10);
+    width: 25%;
+    height: 300px;
+    position: absolute;
+    top: 25%;
+    right: 40%;
+    margin: auto;
+    text-align: center;
+    border-style: groove;
+    border-radius: 11px;
+
+   
+}
+#cabecalho
+{
+    font-family: 'Varsity';
+    color: rgb(255, 255, 255);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+}
+
+#respostas
+{
+    position: absolute;
+    margin: auto;
+    right: 16%;
+    top: 55%;
+    line-height: 25px;
+}
+
+#btnrespostas
+{
+    border-spacing: 10px;
+    
+}
+
+#question
+{
+    font-size: 25px;
+}
+
+input
+{
+    width: 150px;
+    height: 40px;
+    font-size: 20px;
+    border-style: double;
+    border-radius: 15px;
+
+}
+
+#pergunta
+{
+    font-size: 15px;
+    line-height: 20px;
+    position: absolute;
+    width: 80%;
+    right: 10%;
+    
 }
