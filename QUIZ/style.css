@@ -74,7 +74,7 @@ h1
 
 }
 
-.cxquestion
+#cxquestion
 {
     background-color: rgb(5, 10, 10);
     width: 25%;
@@ -103,14 +103,13 @@ h1
     position: absolute;
     margin: auto;
     right: 16%;
-    top: 55%;
-    line-height: 25px;
+    top: 40%;
+    line-height: 30px;
 }
 
 #btnrespostas
 {
     border-spacing: 10px;
-    
 }
 
 #question
@@ -118,15 +117,6 @@ h1
     font-size: 25px;
 }
 
-input
-{
-    width: 150px;
-    height: 40px;
-    font-size: 20px;
-    border-style: double;
-    border-radius: 15px;
-
-}
 
 #pergunta
 {
@@ -136,4 +126,14 @@ input
     width: 80%;
     right: 10%;
     
+}
+
+.answer
+{
+    color: rgb(255,255,255);
+    width: 150px;
+    height: 40px;
+    font-size: 20px;
+    border-style: double;
+    border-radius: 15px;
 }
