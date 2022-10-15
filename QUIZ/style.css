@@ -137,3 +137,8 @@ h1
     border-style: double;
     border-radius: 15px;
 }
+
+#conteudo
+{
+    display: block;
+}
