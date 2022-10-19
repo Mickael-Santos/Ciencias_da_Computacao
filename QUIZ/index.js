@@ -26,23 +26,21 @@ const perguntas = [pergunta1 = {
     question: 'Qual fruta envenenada comeu a Branca de Neve?',
     answers: ['Melão','Maça','Laranja','Manga'],
     correta: 1,
-    status: 0},
+    status: 0}
     
-    final = {
-    question: '',
-    answers: []
-    }];
+
+    ];
 
 
 let indexnumber = 0;
 let MAX_QUESTION = perguntas.length;
+let pontuacao = 0;
 
 viewquestion()
 
 function setNewQuestion()
 {   
     indexnumber += 1
-    
     return indexnumber;
 }   
 
@@ -50,34 +48,50 @@ function setNewQuestion()
 
 function viewquestion(){
 
-    let title = document.getElementById('pergunta')
-    title.textContent = perguntas[indexnumber].question; 
-
-    let q = document.querySelectorAll(".answer");
-    q.forEach(function(element, index)
-    {
-        element.textContent = perguntas[indexnumber].answers[index];
-        element.addEventListener('click', function(){
-            if(index == perguntas[indexnumber].correta){
-                console.log('acertou');
-            }else{
-                console.log('acertou');
-            };
-        });
-    });
-
-    if(indexnumber <= MAX_QUESTION)
-    {
-        indexnumber = setNewQuestion();
-    }
     if(indexnumber == MAX_QUESTION)
     {
         selectedDiv = document.getElementById('conteudo').style.display="none";
+        if(pontuacao >= 200)
+        {
+            selectedEnd = document.getElementById('endgame').style.display="block";
+        }else
+        {
+            selectedEnd = document.getElementById('gameover').style.display="block";
+        }
+    }else{
+
+        let cliqueStatus = 1;
+
+        let title = document.getElementById('pergunta')
+        title.textContent = perguntas[indexnumber].question; 
+
+        let q = document.querySelectorAll(".answer");
+        q.forEach(function(element, index)
+        {
+            element.textContent = perguntas[indexnumber].answers[index];
+            element.addEventListener('click', function(){
+                if(index == perguntas[indexnumber -2].correta){ 
+                    if(cliqueStatus == 1)
+                    {
+                        pontuacao += 50;
+                        cliqueStatus = 0;
+                        console.log(pontuacao);
+                    }
+                    
+                }else{
+                    if(cliqueStatus == 1)
+                    {
+                        cliqueStatus = 0;
+                        console.log(pontuacao);
+                    }      
+                };
+            });
+        });
+
+        indexnumber = setNewQuestion();
+        
     }
-     
 };
-
-
 
 
 

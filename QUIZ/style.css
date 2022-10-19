@@ -1,4 +1,4 @@
-
+/*USO DE FONTES EXTERNAS*/
 @font-face {
     font-family: 'Varsity';
     src: url('fonts/varsity_regular.ttf')format('truetype');
@@ -6,14 +6,14 @@
     font-style: normal;
   }
 
-
+/*ESTILO DO CORPO DA PÁGINA*/
 body
 {
     background-color: rgb(28, 28, 28);
     padding: 0px;
     margin: 0px;
 }
-
+/*ESTILO DA SECTION MENU INICIAR*/
 .btn
 {
     
@@ -81,7 +81,7 @@ h1
     height: 300px;
     position: absolute;
     top: 25%;
-    right: 40%;
+    right: 36%;
     margin: auto;
     text-align: center;
     border-style: groove;
@@ -97,7 +97,7 @@ h1
     font-weight: normal;
     font-size: 10px;
 }
-
+/*ESTILO DA DIV CONTENDO A TABELA*/
 #respostas
 {
     position: absolute;
@@ -106,7 +106,7 @@ h1
     top: 40%;
     line-height: 30px;
 }
-
+/*ESTILO DAS TABELA DAS ALTERNATIVAS*/
 #btnrespostas
 {
     border-spacing: 10px;
@@ -117,6 +117,7 @@ h1
     font-size: 25px;
 }
 
+/*ESTILO DAS PERGUNTAS*/
 
 #pergunta
 {
@@ -127,7 +128,7 @@ h1
     right: 10%;
     
 }
-
+/*ESTILO DAS ALTERNATIVAS*/
 .answer
 {
     color: rgb(255,255,255);
@@ -137,8 +138,86 @@ h1
     border-style: double;
     border-radius: 15px;
 }
-
+/*CONTROLE DE VISUALIZAÇÃO DA DIV CONTEÚDO*/
 #conteudo
 {
     display: block;
+}
+/*CONTROLE DE VISUALIZAÇÃO DA DIV ENDGAME*/
+#endgame
+{
+    display: none;
+}
+/*CONTROLE DE VISUALIZAÇÃO DA DIV GAME OVER*/
+#gameover
+{
+    display: none;
+}
+
+/*DIV DO END GAME*/
+
+#ganhou
+{
+    position: absolute;
+    width: 40%;
+    right: 29%;
+    bottom: 7%;
+    color: rgb(255,255,255);
+    
+}
+
+
+#ganhoutxt
+{
+    color: rgb(255,255,255);
+    font-family: 'Varsity';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 50px;
+    margin: auto;
+    line-height: 150px;
+    
+}
+
+#voltarendgame
+{
+    position: absolute;
+    font-size: 20px;
+    margin: auto;
+    padding: 2px;
+    width: 100px;
+    height: 30px;
+    line-height: 1rem;
+    top: 15rem;
+    right: 38%;
+    text-decoration: none;
+    color: rgb(255,255,255);
+    border-style: groove;
+    
+}
+
+#textvoltar
+{
+    position: relative;
+    bottom: 13px;
+}
+
+#gameoverimg
+{
+    position: absolute;
+    width: 40%;
+    right: 29%;
+    bottom: 25%;
+    color: rgb(255,255,255);
+}
+
+#gameovertxt
+{
+    color: rgb(255,255,255);
+    font-family: 'Varsity';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 50px;
+    margin: auto;
+    line-height: 150px;
 }
